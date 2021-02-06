@@ -1,38 +1,404 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+li,
+button {
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+small {
+    font-size: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-family: "Inter";
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+main {
+    margin-top: 5em;
+}
+
+.container {
+    width: 100%;
+    padding-left: 4em;
+    padding-right: 4em;
+    position: relative;
+}
+
+.navbar {
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 30px;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.nav-link.private {
+    /* color: #bcbbbb; */
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.nav-link.private::before {
+    content: "";
+    background: url("./assets/icons/lock.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.6;
+    margin-bottom: 4px;
+}
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 10px 17px;
+}
+
+.button.white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.subtitle {
+    font-size: 21px;
+    color: #808080;
+    max-width: 55%;
+    padding-top: 7px;
+    letter-spacing: -0.5px;
+}
+
+.featured-work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6em;
+}
+
+.featured-item {
+    flex-basis: 25%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.featured-item img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .featured-item {
+        flex-basis: 33.333%;
+    }
+}
+
+.coming-soon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 50%;
+    position: relative;
+    padding: 1px;
+}
+
+.coming-soon.left {
+    background: linear-gradient(180deg, #ff6060 0%, #ef15d9 100%);
+}
+
+.coming-soon.right {
+    background: linear-gradient(180deg, #30cdff 0%, #5d24ff 100%);
+}
+
+.coming-soon-inner {
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 6em;
+}
+
+.coming-soon:first-of-type {
+    border-right: none;
+}
+
+.coming-soon-inner small {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    background: linear-gradient(90deg, #ff2cf7 -11.42%, #00ffff 80.31%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.signup {
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #ff2cf7;
+    padding: 12em 0;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 3em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .subtitle {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    .container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .subtitle {
+        font-size: 19px;
+    }
+    .coming-soon-wrapper {
+        display: block;
+    }
+    .coming-soon-inner {
+        height: 300px;
+        padding: 2em;
+    }
+    .featured-work {
+        margin-top: 4em;
+    }
+    .featured-item {
+        flex-basis: 100%;
+    }
+    .nav-item {
+        display: none;
+    }
 }
