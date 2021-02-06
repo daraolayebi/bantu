@@ -197,11 +197,11 @@ h5 {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 60px;
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 main {
@@ -229,7 +229,7 @@ main {
 
 .nav-item {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 25px;
 }
 
 .nav-link.private {
@@ -269,7 +269,6 @@ main {
 .subtitle {
     font-size: 21px;
     color: #808080;
-    max-width: 55%;
     padding-top: 7px;
     letter-spacing: -0.5px;
 }
@@ -290,12 +289,6 @@ main {
 
 .featured-item img {
     width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-    .featured-item {
-        flex-basis: 33.333%;
-    }
 }
 
 .coming-soon-wrapper {
@@ -361,23 +354,59 @@ main {
     padding: 3em 0;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-    .subtitle {
-        max-width: 100%;
+@media screen and (max-width: 1366px) {
+    h1 {
+        font-size: 55px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 50px;
+    }
+    .coming-soon-inner {
+        padding: 4em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .coming-soon-inner {
+        padding: 3em;
+    }
+}
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 35px;
     }
     h2 {
         font-size: 29px;
     }
+    .featured-item {
+        flex-basis: 33.333%;
+    }
+    .coming-soon-inner {
+        height: 350px;
+        padding: 2em;
+    }
+    .container {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 29px;
+    } */
     .container {
         padding-left: 2em;
         padding-right: 2em;
@@ -385,12 +414,11 @@ main {
     .subtitle {
         font-size: 19px;
     }
-    .coming-soon-wrapper {
-        display: block;
-    }
     .coming-soon-inner {
         height: 300px;
-        padding: 2em;
+    }
+    .coming-soon-wrapper {
+        display: block;
     }
     .featured-work {
         margin-top: 4em;

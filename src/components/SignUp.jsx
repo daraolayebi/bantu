@@ -6,7 +6,7 @@ const SignUp = () => {
             <div className="container">
                 <h2>Get notified when we launch</h2>
                 <input type="email" placeholder="Your email"/>
-                <button>Sign Up</button>
+                <button className="button white">Sign Up</button>
             </div>
         </div>
     )
