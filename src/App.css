@@ -240,7 +240,7 @@ main {
 
 .nav-link.private::before {
     content: "";
-    background: url("./assets/icons/lock.svg") no-repeat;
+    background: url("./assets/icons/Lock.svg") no-repeat;
     background-size: cover;
     width: 30px;
     height: 30px;
