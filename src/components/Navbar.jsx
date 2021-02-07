@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from '../assets/icons/logo.svg'
+import logo from '../assets/icons/logo.svg'
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="container">
             <div className="navbar-list">
                 <Link to="/" className="navbar-brand">
-                    <img src={Logo} alt="Bantu Logo" width="130" />
+                    <img src={logo} alt="Bantu Logo" width="130" />
                 </Link>
                 <ul className="navbar-list-items">
                 <li className="nav-item">
