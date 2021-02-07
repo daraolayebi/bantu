@@ -13,35 +13,51 @@ const FeaturedWork = () => {
         <div className="featured-work">
             <div className="featured-item">
                 <img src={FeatureOne} alt="theseyekehinde"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="in">theseyekehinde</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureTwo} alt="shutabug"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="tw">shutabug</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureThree} alt="rubyokoro"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="in">rubyokoro</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureFour} alt="nurdinmomodu"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="tw">nurdinmomodu</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureFive} alt="theayophillips"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="in">theayophillips</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureSix} alt="unorthodox_dan"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="tw">unorthodox_dan</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureSeven} alt="akxnni"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="in">akxnni</label>
+                </div>
             </div>
             <div className="featured-item">
                 <img src={FeatureEight} alt="joshadegboye_"/>
-                <label></label>
+                <div className="featured-item-overlay">
+                    <label className="tw">joshadegboye_</label>
+                </div>
             </div>
         </div>
     )
