@@ -1,41 +1,42 @@
-import React from "react";
+// import React from "react";
+import React, { Component } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import Logo from '../assets/icons/Logo.svg'
 
-const NavBar = () => {
-  return (
-    <nav className="navbar">
-        <div className="container">
-            <div className="navbar-list">
-                <Link to="/" className="navbar-brand">
-                    <img src={Logo} alt="Bantu Logo" width="130" />
-                </Link>
-                <ul className="navbar-list-items">
-                <li className="nav-item">
-                    <NavLink to="/jobs" className="nav-link private" activeClassName="is-active">
-                    Jobs
-                    </NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/communities" className="nav-link private" activeClassName="is-active">
-                    Communities
-                    </NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/discover" className="nav-link private" activeClassName="is-active">
-                    Discover
-                    </NavLink>
-                </li>
-                <li className="nav-item button">
-                    <NavLink to="/login" className="nav-link">
-                    Sign Up
-                    </NavLink>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-  );
-};
+class NavBar extends Component {
+    render() {
+        return (
+            <nav className="navbar">
+                <div className="container">
+                    <div className="navbar-list">
+                        <Link to="/" className="navbar-brand">
+                            <img src={Logo} alt="Bantu Logo" width="130" />
+                        </Link>
+                        <ul className="navbar-list-items">
+                        <li className="nav-item">
+                            <NavLink to="/jobs" className="nav-link private" activeClassName="is-active">
+                            Jobs
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/communities" className="nav-link private" activeClassName="is-active">
+                            Communities
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/discover" className="nav-link private" activeClassName="is-active">
+                            Discover
+                            </NavLink>
+                        </li>
+                        <li className="nav-item button">
+                            <span onClick={() => window.location.replace("/#signup")} className="nav-link">Sign Up</span>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        );
+    }
+}
 
 export default NavBar;
