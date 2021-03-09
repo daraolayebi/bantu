@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
-
 @font-face {
     font-family: "Inter";
     src: url("./assets/fonts/Inter-Bold.woff") format("woff");
@@ -278,6 +277,11 @@ main {
     /* border-color: linear-gradient(180deg, #ff6060 0%, #ef15d9 100%); */
 }
 
+.button-signup:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -347,6 +351,7 @@ main {
     right: 0;
     margin: auto;
     max-width: fit-content;
+    text-align: center;
     font-size: 14px;
     cursor: pointer;
     transition: all 300ms ease-in-out;
@@ -433,8 +438,7 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 25px;
-    background: linear-gradient(90deg, #ff2cf7 -11.42%, #00ffff 80.31%),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(90deg, #ff2cf7 -11.42%, #00ffff 80.31%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     background-size: auto auto;
     background-clip: border-box;
     background-clip: text;
@@ -546,6 +550,7 @@ option:not(:first-of-type) {
         padding: 3em;
     }
 }
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 35px;
@@ -593,6 +598,9 @@ option:not(:first-of-type) {
     }
     .featured-item img {
         height: 200px;
+    }
+    .featured-item-overlay {
+        background: transparent;
     }
     .nav-item {
         display: none;
