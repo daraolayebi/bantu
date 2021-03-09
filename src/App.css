@@ -617,6 +617,20 @@ option:not(:first-of-type) {
     .featured-item img {
         height: 200px;
     }
+    .featured-item label.tw::before {
+        content: "";
+        background: url("./assets/icons/Twitter.svg") no-repeat;
+        background-size: cover;
+        width: 20px;
+        margin-right: 5px;
+    }
+    .featured-item label.in::before {
+        content: "";
+        background: url("./assets/icons/instagram.svg") no-repeat;
+        background-size: cover;
+        width: 20px;
+        margin-right: 5px;
+    }
     .featured-item-overlay {
         background: transparent;
     }
