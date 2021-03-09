@@ -10,7 +10,7 @@ class NavBar extends Component {
                 <div className="container">
                     <div className="navbar-list">
                         <Link to="/" className="navbar-brand">
-                            <img src={Logo} alt="Bantu Logo" width="130" />
+                            <img src={Logo} alt="Bantu Logo" className="logo" />
                         </Link>
                         <ul className="navbar-list-items">
                         <li className="nav-item">
