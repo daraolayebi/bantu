@@ -590,6 +590,12 @@ option:not(:first-of-type) {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .nav-item:not(:last-of-type) {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .container {
         padding-left: 25px;
@@ -622,6 +628,8 @@ option:not(:first-of-type) {
         background: url("./assets/icons/Twitter.svg") no-repeat;
         background-size: cover;
         width: 20px;
+        height: 20px;
+        display: inline-block;
         margin-right: 5px;
     }
     .featured-item label.in::before {
@@ -629,13 +637,12 @@ option:not(:first-of-type) {
         background: url("./assets/icons/instagram.svg") no-repeat;
         background-size: cover;
         width: 20px;
+        height: 20px;
+        display: inline-block;
         margin-right: 5px;
     }
     .featured-item-overlay {
         background: transparent;
-    }
-    .nav-item:not(:last-of-type) {
-        display: none;
     }
     .signup-form {
         flex-direction: column;
