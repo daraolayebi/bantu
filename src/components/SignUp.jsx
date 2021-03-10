@@ -27,7 +27,7 @@ class SignUp extends Component {
 					submitted: true,
 					timestamp: "",
 					email: "",
-					occupation: "",
+					occupation: "default",
 				});
 			})
 			.catch((error) => {
@@ -50,13 +50,12 @@ class SignUp extends Component {
 					<form name="sign-up" className="signup-form" onSubmit={this.handleSubmit}>
 						<input
 							type="email"
-							name="email"
 							value={this.state.email}
 							onChange={this.handleChange.bind(this)}
 							placeholder="Your email"
 							required
 						/>
-						<select name="occupation" value={this.state.occupation} onChange={this.handleChange.bind(this)} required>
+						<select value={this.state.occupation} onChange={this.handleChange.bind(this)} required>
 							<option disabled value="default">
 								What you do
 							</option>
