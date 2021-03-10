@@ -18,7 +18,7 @@ class SignUp extends Component {
 		data.append("email", this.state.email);
 		data.append("occupation", this.state.occupation);
 		const scriptURL =
-			"https://script.google.com/macros/s/AKfycbzSxzwLt883aYqzt509cEsqxsKVQTSsOcJ_VFhJm0BLZ6Wfr_DPQ6CXLZmr9UpEL2xT/exec";
+			"https://script.google.com/macros/s/AKfycbzNtg0GyRgEW-nk0UR8PUY3L1ytu4YvG4lW-Psf1KZrzFYyE6wYH8NK2Q/exec";
 		axios
 			.post(scriptURL, data)
 			.then((response) => {
