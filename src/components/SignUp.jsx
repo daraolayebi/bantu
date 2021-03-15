@@ -12,7 +12,7 @@ class SignUp extends Component {
 
 	handleSubmit = (e) => {
 		e.preventDefault();
-		this.setState({ loading: true });
+		this.setState({ loading: true, submitted: false });
 		const data = new FormData();
 		data.append("timestamp", new Date());
 		data.append("email", this.state.email);
@@ -36,9 +36,10 @@ class SignUp extends Component {
 			});
 	};
 
-	handleChange = (event) => {
-		const { name, value } = event.target;
-		this.setState({ [name]: value });
+	handleChange = (e) => {
+		this.setState({
+			[e.target.name]: e.target.value,
+		});
 	};
 
 	render() {
@@ -52,13 +53,14 @@ class SignUp extends Component {
 						<input
 							type="email"
 							id="email"
-							defaultValue={email}
-							onChange={this.handleChange.bind(this)}
+							name="email"
+							value={email}
+							onChange={this.handleChange}
 							placeholder="Your email address"
 							required
 						/>
 						<label htmlFor="occupation" aria-label="Occupation" title="Occupation"></label>
-						<select value={occupation} id="occupation" onChange={this.handleChange.bind(this)} required>
+						<select value={occupation} id="occupation" name="occupation" onChange={this.handleChange} required>
 							<option disabled value="default">
 								What you do
 							</option>
