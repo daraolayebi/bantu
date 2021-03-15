@@ -3,11 +3,11 @@ import axios from "axios";
 
 class SignUp extends Component {
 	state = {
-		loading: false,
-		submitted: false,
 		timestamp: "",
 		email: "",
 		occupation: "default",
+		loading: false,
+		submitted: false,
 	};
 
 	handleSubmit = (e) => {
@@ -18,7 +18,7 @@ class SignUp extends Component {
 		data.append("email", this.state.email);
 		data.append("occupation", this.state.occupation);
 		const scriptURL =
-			"https://script.google.com/macros/s/AKfycbzNtg0GyRgEW-nk0UR8PUY3L1ytu4YvG4lW-Psf1KZrzFYyE6wYH8NK2Q/exec";
+			"https://script.google.com/macros/s/AKfycbzSxzwLt883aYqzt509cEsqxsKVQTSsOcJ_VFhJm0BLZ6Wfr_DPQ6CXLZmr9UpEL2xT/exec";
 		axios
 			.post(scriptURL, data)
 			.then((response) => {
@@ -42,20 +42,23 @@ class SignUp extends Component {
 	};
 
 	render() {
-		const { loading, submitted } = this.state;
+		const { email, occupation, loading, submitted } = this.state;
 		return (
-			<div id="signup" className="signup text-center">
+			<section id="signup" className="signup text-center">
 				<div className="container">
 					<h2>Get notified when we launch</h2>
 					<form name="sign-up" className="signup-form" onSubmit={this.handleSubmit}>
+						<label htmlFor="email" aria-label="Email" title="Email"></label>
 						<input
 							type="email"
-							value={this.state.email}
+							id="email"
+							defaultValue={email}
 							onChange={this.handleChange.bind(this)}
-							placeholder="Your email"
+							placeholder="Your email address"
 							required
 						/>
-						<select value={this.state.occupation} onChange={this.handleChange.bind(this)} required>
+						<label htmlFor="occupation" aria-label="Occupation" title="Occupation"></label>
+						<select value={occupation} id="occupation" onChange={this.handleChange.bind(this)} required>
 							<option disabled value="default">
 								What you do
 							</option>
@@ -75,7 +78,7 @@ class SignUp extends Component {
 						{submitted ? "Your details have been submitted successfully! Thank you!" : ""}
 					</span>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }
