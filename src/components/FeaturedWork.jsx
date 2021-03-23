@@ -7,71 +7,97 @@ import FeatureFive from "../assets/images/theayophillips.jpg";
 import FeatureSix from "../assets/images/unorthodox_dan.jpg";
 import FeatureSeven from "../assets/images/akxnni.jpg";
 import FeatureEight from "../assets/images/joshadegboye_.jpg";
+import Instagram from "../assets/icons/instagram.svg";
+import Twitter from "../assets/icons/twitter.svg";
 
 const FeaturedWork = () => {
 	return (
 		<section className="featured-work">
 			<div className="featured-item">
 				<a href="https://www.instagram.com/theseyekehinde/?hl=en" target="_blank" rel="noreferrer">
-					<img src={FeatureOne} alt="theseyekehinde" />
+					<img src={FeatureOne} className="feature-artwork" alt="theseyekehinde" />
 					<div className="featured-item-overlay">
-						<label className="in">theseyekehinde</label>
+						<label className="in">
+							<img src={Instagram} alt="Instagram" />
+							theseyekehinde
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://twitter.com/Shutabug" target="_blank" rel="noreferrer">
-					<img src={FeatureTwo} alt="shutabug" />
+					<img src={FeatureTwo} className="feature-artwork" alt="shutabug" />
 					<div className="featured-item-overlay">
-						<label className="tw">shutabug</label>
+						<label className="tw">
+							<img src={Twitter} alt="Twitter" />
+							shutabug
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://www.instagram.com/rubyokoro/?hl=en" target="_blank" rel="noreferrer">
-					<img src={FeatureThree} alt="rubyokoro" />
+					<img src={FeatureThree} className="feature-artwork" alt="rubyokoro" />
 					<div className="featured-item-overlay">
-						<label className="in">rubyokoro</label>
+						<label className="in">
+							<img src={Instagram} alt="Instagram" />
+							rubyokoro
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://twitter.com/nurdinmomodu" target="_blank" rel="noreferrer">
-					<img src={FeatureFour} alt="nurdinmomodu" />
+					<img src={FeatureFour} className="feature-artwork" alt="nurdinmomodu" />
 					<div className="featured-item-overlay">
-						<label className="tw">nurdinmomodu</label>
+						<label className="tw">
+							<img src={Twitter} alt="Twitter" />
+							nurdinmomodu
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://www.instagram.com/theayophillips/" target="_blank" rel="noreferrer">
-					<img src={FeatureFive} alt="theayophillips" />
+					<img src={FeatureFive} className="feature-artwork" alt="theayophillips" />
 					<div className="featured-item-overlay">
-						<label className="in">theayophillips</label>
+						<label className="in">
+							<img src={Instagram} alt="Instagram" />
+							theayophillips
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://twitter.com/unorthodox_dan" target="_blank" rel="noreferrer">
-					<img src={FeatureSix} alt="unorthodox_dan" />
+					<img src={FeatureSix} className="feature-artwork" alt="unorthodox_dan" />
 					<div className="featured-item-overlay">
-						<label className="tw">unorthodox_dan</label>
+						<label className="tw">
+							<img src={Twitter} alt="Twitter" />
+							unorthodox_dan
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://www.instagram.com/akxnni/" target="_blank" rel="noreferrer">
-					<img src={FeatureSeven} alt="akxnni" />
+					<img src={FeatureSeven} className="feature-artwork" alt="akxnni" />
 					<div className="featured-item-overlay">
-						<label className="in">akxnni</label>
+						<label className="in">
+							<img src={Instagram} alt="Instagram" />
+							akxnni
+						</label>
 					</div>
 				</a>
 			</div>
 			<div className="featured-item">
 				<a href="https://twitter.com/joshadegboye_" target="_blank" rel="noreferrer">
-					<img src={FeatureEight} alt="joshadegboye_" />
+					<img src={FeatureEight} className="feature-artwork" alt="joshadegboye_" />
 					<div className="featured-item-overlay">
-						<label className="tw">joshadegboye_</label>
+						<label className="tw">
+							<img src={Twitter} alt="Twitter" />
+							joshadegboye_
+						</label>
 					</div>
 				</a>
 			</div>
