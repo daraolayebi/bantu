@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import axios from "axios";
 
 class SignUp extends Component {
@@ -12,7 +12,7 @@ class SignUp extends Component {
 
 	handleSubmit = (e) => {
 		e.preventDefault();
-		this.setState({ loading: true, submitted: false });
+		this.setState({loading: true, submitted: false});
 		const data = new FormData();
 		data.append("timestamp", new Date());
 		data.append("email", this.state.email);
@@ -31,7 +31,7 @@ class SignUp extends Component {
 				});
 			})
 			.catch((error) => {
-				this.setState({ loading: false, submitted: false });
+				this.setState({loading: false, submitted: false});
 				alert(error);
 			});
 	};
@@ -43,7 +43,7 @@ class SignUp extends Component {
 	};
 
 	render() {
-		const { email, occupation, loading, submitted } = this.state;
+		const {email, occupation, loading, submitted} = this.state;
 		return (
 			<section id="signup" className="signup text-center">
 				<div className="container">

@@ -619,6 +619,7 @@ option:not(:first-of-type) {
     }
     .featured-item label {
         width: max-content;
+        display: inline-block;
     }
     .featured-item label.tw::before {
         content: "";
