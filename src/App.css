@@ -343,7 +343,7 @@ main {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.685), hsla(0, 0%, 100%, 0));
 }
 
-.featured-item label {
+.featured-item .work-tag {
     background-color: #ffffff;
     border-radius: 30px;
     padding: 8px 15px;
@@ -352,7 +352,7 @@ main {
     left: 0;
     right: 0;
     margin: auto;
-    width: fit-content;
+    width: max-content;
     text-align: center;
     font-size: 14px;
     cursor: pointer;
@@ -367,6 +367,10 @@ main {
     vertical-align: middle;
     margin-right: 5px;
     transition: all 300ms ease-in-out;
+}
+
+.featured-item-overlay .in {
+    margin-bottom: 1px;
 }
 
 .featured-item:hover .featured-item-overlay img {
@@ -595,7 +599,8 @@ option:not(:first-of-type) {
     .featured-item .feature-artwork {
         height: 200px;
     }
-    .featured-item label {
+    .featured-item .work-tag {
+        min-width: 170px;
         display: inline-block;
         padding: 10px 15px;
     }
@@ -607,7 +612,7 @@ option:not(:first-of-type) {
         opacity: 1;
         visibility: visible;
     }
-    .featured-item-overlay label.in img {
+    .featured-item-overlay .work-tag.in img {
         margin-bottom: 1px;
     }
     .signup-form {
@@ -621,5 +626,14 @@ option:not(:first-of-type) {
     .button-signup {
         min-width: auto;
         width: 100%;
+    }
+    .signup {
+        padding: 5em 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
     }
 }
