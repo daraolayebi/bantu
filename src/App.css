@@ -618,7 +618,8 @@ option:not(:first-of-type) {
         height: 200px;
     }
     .featured-item label {
-        width: max-content;
+        width: 100%;
+        max-width: 170px;
         display: inline-block;
     }
     .featured-item label.tw::before {
