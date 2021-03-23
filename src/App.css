@@ -245,7 +245,7 @@ main {
 
 .nav-link.private::before {
     content: "";
-    background: url("./assets/icons/Lock.svg") no-repeat;
+    background: url("./assets/icons/lock.svg") no-repeat;
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -484,7 +484,7 @@ select {
 }
 
 select {
-    background: #ffffff url("./assets/icons/SelectArrow.svg") no-repeat;
+    background: #ffffff url("./assets/icons/select-arrow.svg") no-repeat;
     background-size: 17px;
     background-position: calc(100% - 10px) 20px, calc(100% - 20px) 1em, 100% 0;
     cursor: pointer;

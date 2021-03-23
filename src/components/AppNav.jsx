@@ -1,7 +1,7 @@
 // import React from "react";
 import React, {Component} from "react";
 import {Link, NavLink} from "react-router-dom";
-import Logo from "../assets/icons/Logo.svg";
+import Logo from "../assets/icons/logo.svg";
 
 class NavBar extends Component {
 	render() {
