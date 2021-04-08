@@ -67,6 +67,7 @@ class SignUp extends Component {
 							<option value="Photographer">Photographer</option>
 							<option value="Graphic Designer">Graphic Designer</option>
 							<option value="UI/UX Designer">UI/UX Designer</option>
+							<option value="Developer">Developer</option>
 							<option value="Illustrator">Illustrator</option>
 							<option value="Cinematographer">Cinematographer</option>
 							<option value="3D Animator">3D Animator</option>
